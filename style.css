@@ -15,6 +15,12 @@ body{
     background: linear-gradient(90deg, #648db6, #178a80 );
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 #time{
     display: flex;
     gap: 2rem;
@@ -44,11 +50,15 @@ body{
     stroke:#191919;
     stroke-width: 6;
     transform: translate(5px,5px);
+    -webkit-transform: translate(5px,5px);
+    -moz-transform: translate(5px,5px);
+    -ms-transform: translate(5px,5px);
+    -o-transform: translate(5px,5px);
 }
 
 #time .circle svg circle:nth-child(2){
     stroke: var(--clr);
-    stroke-dasharray: 100;
+    stroke-dasharray: 200;
 }
 #time div{
     position: absolute;
@@ -82,4 +92,13 @@ body{
     background: var(--clr);
     border-radius: 50%;
     box-shadow:0 0 20px var(--clr), 0 0 60px var(--clr) ;
+}
+
+#date {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 0 0 10px #000, 0 0 20px #000;
 }
